@@ -6,13 +6,11 @@ import io.ktor.server.netty.*
 import com.example.routes.*
 import io.ktor.server.application.*
 import io.ktor.server.sessions.*
-import kotlinx.serialization.Serializable
 import java.sql.Timestamp
 
 data class UserSessionData(val data: String)
 // create a data class that will hold things a user would need to be validated, also make it so it can be serialized
 
-@Serializable
 data class SessionData(
 	val userHash: Int,
 	val lastIp: String,
