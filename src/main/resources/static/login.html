@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Login</h1>
+</header>
+<form id="login-form">
+    <div class="login-panel">
+        <h2>Login</h2>
+        <label for="username">Username / Email:</label>
+        <input type="text" id="username" name="username" autocomplete="off">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" autocomplete="off">
+        <input type="submit" value="Login">
+        <a href="./register" class="register-btn">Register</a>
+        <a href="./forgot-password" class="forgot-password-btn">Forgot Password?</a>
+        <div class="error-message-container">
+            <p class="error-message"></p>
+        </div>
+    </div>
+</form>
+
+<footer>
+    &copy; 2023 - All rights reserved.
+</footer>
+<script src="login.js"></script>
+</body>
+</html>

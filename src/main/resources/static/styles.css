@@ -1,0 +1,153 @@
+/* Default styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, input[type="text"], input[type="password"], input[type="email"], input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #FFA17F, #00223E);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    user-select: none;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+header {
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3), inset 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+    user-select: none;
+}
+
+form {
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 20px;
+}
+
+.login-panel {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6), inset 0 0 20px rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.3);
+    user-select: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #555;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+     color: white;
+     border: 2px solid white;
+     padding: 15px;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+     font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    color: #1ABC9C;
+     transition: 0.3s ease;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for extra small screens */
+     main {
+        padding: 10px;
+    }
+     input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+.register-btn, .forgot-password-btn, .back-to-login {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn:hover, .forgot-password-btn:hover, .back-to-login:hover {
+    color: #1ABC9C;
+    transition: 0.3s ease;
+}
+
+.forgot-password-btn {
+    margin-left: 10px;
+}
+
+.error-message-container {
+  display: none;
+}
+
+.error-message {
+  color: #CC4429;
+  background-color: #FEE7E650;
+  border: 1px solid #CC4429;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  max-height: 64px;
+  user-select: none;
+}
